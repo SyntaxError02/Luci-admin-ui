@@ -1,0 +1,13 @@
+.SideBarMenu {
+  margin-bottom: 10px;
+
+  &__title {
+    font-size: 13px;
+    color: rgb(187, 186, 186);
+  }
+
+  &__list {
+    list-style: none;
+    padding: 5px;
+  }
+}

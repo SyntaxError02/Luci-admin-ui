@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+
+  &__main {
+    flex: 4;
+    background-color: #eee;
+    overflow-y: scroll;
+  }
+}

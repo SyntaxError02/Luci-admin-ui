@@ -1,0 +1,61 @@
+.Container {
+  position: relative;
+  overflow: hidden;
+
+  &__form {
+    position: absolute;
+    top: 50%;
+    right: -40%;
+    transform: translate(0, -50%);
+    color: #fff;
+    opacity: 0;
+    transition: all 0.6s ease-in;
+    backface-visibility: hidden;
+  }
+
+  &__show {
+    transform: translate(-108%, -50%);
+    opacity: 1;
+  }
+}
+
+.User {
+  padding: 0 15px;
+  height: calc(100vh - 60px);
+
+  &__heading {
+    text-transform: capitalize;
+    font-size: 30px;
+    padding: 20px 0;
+    margin-bottom: 10px;
+  }
+
+  &__tableContainer {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    height: calc(100% - 200px);
+  }
+
+  &__filterContainer {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  }
+
+  &__root {
+    width: "100%";
+  }
+
+  &__container {
+    max-height: 440px;
+  }
+
+  &__tableIcon {
+    cursor: pointer;
+  }
+}
